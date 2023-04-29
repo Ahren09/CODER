@@ -1,0 +1,47 @@
+# General
+.DS_Store
+pycache/
+*/pycache/
+*.pyc
+
+# Data files
+*.csv
+*.tsv
+*.txt
+*.pdf
+*.npy
+*.npz
+*.dat
+*.xlsx
+*.xls
+*.pt
+interactions_all.json
+
+# Directories
+.ipynb_checkpoints/
+/data/
+/venv/
+/.idea/
+/runs/
+/logs/
+cache/
+
+# Log files
+*.log
+
+Compressed files
+*.gz
+*.tar
+
+# Model and temporary files
+*.gexf
+*.graphml
+*.gephi
+*.pth
+*.data
+*.pkl
+
+# Image files
+*.png
+
+*.0
