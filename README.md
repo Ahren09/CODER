@@ -1,15 +1,34 @@
 # CODER
 
-This is the official implementation of the paper ([“Code Recommendation for Open Source Software Developers”](https://arxiv.org/abs/2210.08332))  published at The Web Conference 2023 (WWW 2023).
+This is the official implementation of the paper [“Code Recommendation for Open Source Software Developers”](https://dl.acm.org/doi/10.1145/3543507.3583503) published at The Web Conference 2023 (WWW 2023) ([Arxiv link](https://arxiv.org/abs/2210.08332)).
+
 
 Please kindly cite our paper if you use our code or dataset in your research:
 
 ```angular2html
+@inproceedings{10.1145/3543507.3583503,
+	title        = {Code Recommendation for Open Source Software Developers},
+	author       = {Jin, Yiqiao and Bai, Yunsheng and Zhu, Yanqiao and Sun, Yizhou and Wang, Wei},
+	year         = 2023,
+	booktitle    = {Proceedings of the ACM Web Conference 2023},
+	location     = {Austin, TX, USA},
+	publisher    = {Association for Computing Machinery},
+	address      = {New York, NY, USA},
+	series       = {WWW '23},
+	pages        = {1324–1333},
+	doi          = {10.1145/3543507.3583503},
+	isbn         = 9781450394161,
+	url          = {https://doi.org/10.1145/3543507.3583503},
+	abstract     = {Open Source Software (OSS) is forming the spines of technology infrastructures, attracting millions of talents to contribute. Notably, it is challenging and critical to consider both the developers’ interests and the semantic features of the project code to recommend appropriate development tasks to OSS developers. In this paper, we formulate the novel problem of code recommendation, whose purpose is to predict the future contribution behaviors of developers given their interaction history, the semantic features of source code, and the hierarchical file structures of projects. We introduce CODER, a novel graph-based CODE Recommendation framework for open source software developers, which accounts for the complex interactions among multiple parties within the system. CODER jointly models microscopic user-code interactions and macroscopic user-project interactions via a heterogeneous graph and further bridges the two levels of information through aggregation on file-structure graphs that reflect the project hierarchy. Moreover, to overcome the lack of reliable benchmarks, we construct three large-scale datasets to facilitate future research in this direction. Extensive experiments show that our CODER framework achieves superior performance under various experimental settings, including intra-project, cross-project, and cold-start recommendation.},
+	numpages     = 10,
+	keywords     = {Code recommendation, open source software development, multimodal recommendation, graph neural networks, recommender system}
+}
+
 @article{jin2022code,
-  title={Code Recommendation for Open Source Software Developers},
-  author={Jin, Yiqiao and Bai, Yunsheng and Zhu, Yanqiao and Sun, Yizhou and Wang, Wei},
-  journal={arXiv preprint arXiv:2210.08332},
-  year={2022}
+	title        = {Code Recommendation for Open Source Software Developers},
+	author       = {Jin, Yiqiao and Bai, Yunsheng and Zhu, Yanqiao and Sun, Yizhou and Wang, Wei},
+	year         = 2022,
+	journal      = {arXiv preprint arXiv:2210.08332}
 }
 ```
 
