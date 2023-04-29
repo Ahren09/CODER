@@ -1,6 +1,6 @@
 # CODER
 
-This is the official implementation of the paper ([“Code Recommendation for Open Source Software Developers”](https://arxiv.org/abs/2210.08332))  published at The Web Conference 2023 (WWW'2023).
+This is the official implementation of the paper ([“Code Recommendation for Open Source Software Developers”](https://arxiv.org/abs/2210.08332))  published at The Web Conference 2023 (WWW 2023).
 
 Please kindly cite our paper if you use our code or dataset in your research:
 
@@ -37,7 +37,7 @@ We will upload the processed data soon.
 
 ### Raw dataset
 
-The raw dataset is available at ([Google Drive](https://drive.google.com/drive/folders/1-dehBnSc9kBcEKwL9SroEqNMVoLOvU1F?usp=share_link)). It includes 4 files: `stargazers.tar.gz`, `watchers.tar.gz`, `subscribers.tar.gz`, and `forks.tar.gz`.
+The raw dataset is available at ([Google Drive](https://drive.google.com/drive/folders/1-dehBnSc9kBcEKwL9SroEqNMVoLOvU1F?usp=share_link)). It includes 5 files: `stargazers.tar.gz`, `stargazers_2023.tar.gz`, `watchers.tar.gz`, `subscribers.tar.gz`, and `forks.tar.gz`.
 
 untar each file using commands like:
 
@@ -101,7 +101,7 @@ When collecting stargazers, forks, subscribers, and watchers data from GitHub, w
 
 ## Limitation
 
-* An OSS project typically contains multiple branches. Thus, a multi-branch repository can be in multiple states at any given timestamp. This results in multiple versions of a repository at any given time, making it difficult to model the repository as a dynamic graph. Currently, CODER does not handle this dynamic graphs.
+* Currently, CODER does not handle this dynamic graphs. This is because an OSS project typically contains multiple branches. Thus, a multi-branch repository can be in multiple states at any given timestamp, making it difficult to model the repository as a dynamic graph. It would be interesting to study this multi-state nature of OSS projects in the future.
 
 ## Acknowledgement
 Some of the implementations are from [LightGCN (PyTorch)](https://github.com/gusye1234/LightGCN-PyTorch.git)

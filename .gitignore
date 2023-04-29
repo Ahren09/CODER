@@ -41,7 +41,5 @@ Compressed files
 *.data
 *.pkl
 
-# Image files
-*.png
 
 *.0
